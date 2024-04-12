@@ -22,11 +22,5 @@ class DNSInterface(ABC):
         self.domain_name = domain_name
     
     @abstractmethod
-    def update_dns_record(self, new_ip: str) -> bool:
-        '''
-        @parameter new_ip: ipv4 string
-        @returns tries getting the ip for one minute.
-                If successful, TRUE
-                If timeout, FALSE
-        '''
+    def update_dns_record(self, new_ip: str):
         return
